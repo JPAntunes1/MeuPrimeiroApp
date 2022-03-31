@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  //Meu primeiro código em Flutter
+  // Meu primeiro código em Flutter.
   runApp(
     MeuApp(),
   );
@@ -14,14 +14,13 @@ class MeuApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-            backgroundColor: Colors.blueGrey[900],
-            title: Center(
-              child: Text('Meu primeiro app'),
-            )),
+          backgroundColor: Colors.blueGrey[900],
+          title: Center(child: Text('Eu Sou Rico')),
+        ),
         body: Center(
           child: Image(
-              image: NetworkImage(
-                  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Trof%C3%A9u_de_NFA.svg/1200px-Trof%C3%A9u_de_NFA.svg.png')),
+            image: AssetImage('imagens/rubi.png'),
+          ),
         ),
       ),
     );
